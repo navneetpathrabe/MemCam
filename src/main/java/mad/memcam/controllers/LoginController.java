@@ -39,7 +39,6 @@ public class LoginController {
 
     @RequestMapping({"/login/{username}/{password}"})
     public ResponseEntity<Login> updateLogins(@PathVariable String username, @PathVariable String password, Model model){
-        //model.addAttribute("products", loginService.listAll());
         Login login = new Login();
         login.setUserName(username);
         login.setPassWord(password);
@@ -49,5 +48,5 @@ public class LoginController {
         else
             return new ResponseEntity<Login>(logins, HttpStatus.OK);
     }
-
+    
 }

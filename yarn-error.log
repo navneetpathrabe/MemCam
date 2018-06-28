@@ -1,0 +1,32 @@
+Arguments: 
+  /home/himanshu/.nvm/versions/node/v9.8.0/bin/node /home/himanshu/.nvm/versions/node/v9.8.0/bin/yarn start
+
+PATH: 
+  /home/himanshu/.nvm/versions/node/v9.8.0/bin:/home/himanshu/bin:/home/himanshu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.8.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "/home/himanshu/Memcam"
+      at new MessageError (/home/himanshu/.nvm/versions/node/v9.8.0/lib/node_modules/yarn/lib/cli.js:186:110)
+      at /home/himanshu/.nvm/versions/node/v9.8.0/lib/node_modules/yarn/lib/cli.js:40048:15
+      at Generator.next (<anonymous>)
+      at step (/home/himanshu/.nvm/versions/node/v9.8.0/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /home/himanshu/.nvm/versions/node/v9.8.0/lib/node_modules/yarn/lib/cli.js:109:13
+      at <anonymous>
