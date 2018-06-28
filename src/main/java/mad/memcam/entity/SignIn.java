@@ -8,15 +8,22 @@ public class SignIn {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String signId;
+
+    @Column(unique = true, nullable = false)
     private String name;
+
+    @Column(unique = true, nullable = false)
     private String phoneNumber;
+
+    @Column(unique = true, nullable = false)
     private String gender;
 
-
     @OneToOne(cascade = {CascadeType.ALL})
+    //@Column(unique = true, nullable = false)
     private Login login;
 
     @OneToOne(cascade = {CascadeType.ALL})
+    //@Column(unique = true, nullable = false)
     private Address address;
 
     public String getSignId() {

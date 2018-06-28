@@ -1,9 +1,6 @@
 package mad.memcam.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Address {
@@ -11,9 +8,14 @@ public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String addressId;
+
+    @Column(unique = true, nullable = false)
     private String district;
+
+    @Column(unique = true, nullable = false)
     private String pinCode;
 
+    @Column(unique = true, nullable = false)
     private String line1;
 
     public String getLine1() {

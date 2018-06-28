@@ -28,7 +28,10 @@ public class Login {
         this.passWord = passWord;
     }
 
+    @Column(unique = true, nullable = false)
     private String userName;
+
+    @Column(unique = true, nullable = false)
     private String passWord;
 
 
