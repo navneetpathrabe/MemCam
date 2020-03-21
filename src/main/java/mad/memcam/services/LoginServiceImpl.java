@@ -18,7 +18,9 @@ public class LoginServiceImpl implements LoginService{
     public List<Login> listAll() {
         List<Login> logins = new ArrayList<>();
         loginRepository.findAll().forEach(logins::add); //fun with Java 8  // logins.add(x);
+        System.out.println("I am Navneet making some changes");
         return logins;
+
     }
 
     @Override
@@ -38,3 +40,4 @@ public class LoginServiceImpl implements LoginService{
     }
 
 }
+
